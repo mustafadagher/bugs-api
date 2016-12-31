@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  device: MyString
+  os: MyString
+  memory: 
+  storage: 
+  bug: one
+
+two:
+  device: MyString
+  os: MyString
+  memory: 
+  storage: 
+  bug: two
