@@ -26,5 +26,12 @@ module BugsApi
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    bunny.connection = Bunny.new
+    bunny.connection.start
+
+    bunny.channel = bunny.connection.create_channel
+
+    rabbit.publisher = RabbitPublisher.new(bunny.channel)
   end
 end

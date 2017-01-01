@@ -46,6 +46,6 @@ class BugsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def bug_params
-      params.require(:bug).permit(:app_token, :number, :status, :priority, :comment, :state_id)
+      params.require(:bug).permit(:app_token, :number, :status, :priority, :comment)
     end
 end
